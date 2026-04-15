@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIT Digital Hub — Diseño Completo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Poppins',sans-serif; background:#f0f0f0; color:#1a1a1a; }
+
+  .page-wrapper { max-width:420px; margin:0 auto; background:#fff; box-shadow:0 0 40px #0002; position:relative; }
+
+  /* NAV */
+  nav { background:#fff; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee; position:sticky; top:0; z-index:100; }
+  .nav-logo { font-weight:800; font-size:15px; color:#1a2a6c; letter-spacing:1px; }
+  .nav-logo span { color:#ff3131; }
+  .nav-cta { background:#ff3131; color:#fff; font-size:10px; font-weight:700; padding:6px 12px; border-radius:4px; }
+
+  /* HERO */
+  .hero { background:linear-gradient(135deg, #1a2a6c 0%, #2d2d2d 55%, #ff3131 100%); padding:50px 20px 40px; text-align:center; }
+  .hero-logo { width:80px; height:80px; object-fit:contain; background:#fff; border-radius:12px; padding:6px; margin:0 auto 20px; display:block; }
+  .hero h1 { color:#fff; font-size:22px; font-weight:800; line-height:1.25; margin-bottom:12px; }
+  .hero h1 span { color:#00d2ff; }
+  .hero p { color:#ffffffcc; font-size:12px; line-height:1.6; margin-bottom:24px; }
+  .hero-btn { background:#ff3131; color:#fff; font-weight:700; font-size:12px; padding:12px 28px; border-radius:6px; display:inline-block; box-shadow:0 4px 20px #ff313155; }
+  .hero-badge { margin-top:20px; display:flex; justify-content:center; gap:16px; }
+  .badge { background:#ffffff15; border:1px solid #ffffff25; border-radius:20px; padding:5px 12px; color:#fff; font-size:9px; font-weight:600; }
+
+  /* WHY SECTION */
+  .section { padding:40px 20px; }
+  .section-title { font-size:18px; font-weight:800; color:#1a2a6c; margin-bottom:6px; }
+  .section-sub { font-size:11px; color:#666; line-height:1.6; margin-bottom:24px; }
+  .benefits { display:flex; flex-direction:column; gap:14px; }
+  .benefit { display:flex; align-items:flex-start; gap:14px; padding:14px; background:#f8f9ff; border-radius:8px; border-left:3px solid #1a2a6c; }
+  .benefit-icon { font-size:22px; flex-shrink:0; }
+  .benefit-title { font-size:12px; font-weight:700; color:#1a2a6c; }
+  .benefit-desc { font-size:11px; color:#555; margin-top:2px; line-height:1.4; }
+
+  /* PRICING */
+  .pricing-section { padding:40px 20px; background:#f8f9ff; }
+  .pricing-title { font-size:18px; font-weight:800; color:#1a2a6c; margin-bottom:6px; }
+  .pricing-sub { font-size:11px; color:#666; margin-bottom:24px; }
+  .plans { display:flex; flex-direction:column; gap:14px; }
+  .plan { background:#fff; border-radius:12px; padding:18px; border:2px solid #e5e7eb; position:relative; }
+  .plan.popular { border-color:#ff3131; box-shadow:0 4px 20px #ff313115; }
+  .popular-badge { position:absolute; top:-10px; left:50%; transform:translateX(-50%); background:#ff3131; color:#fff; font-size:9px; font-weight:700; padding:3px 12px; border-radius:20px; white-space:nowrap; }
+  .plan-name { font-size:11px; font-weight:700; color:#888; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px; }
+  .plan-tagline { font-size:14px; font-weight:700; color:#1a2a6c; margin-bottom:8px; }
+  .plan-price { font-size:26px; font-weight:800; color:#1a2a6c; }
+  .plan-price span { font-size:12px; font-weight:500; color:#888; }
+  .plan-features { margin-top:12px; display:flex; flex-direction:column; gap:6px; }
+  .plan-feature { font-size:11px; color:#444; display:flex; gap:6px; align-items:flex-start; }
+  .plan-feature::before { content:'✓'; color:#1a2a6c; font-weight:700; flex-shrink:0; }
+  .plan.popular .plan-feature::before { color:#ff3131; }
+  .plan-btn { margin-top:14px; width:100%; text-align:center; padding:10px; border-radius:6px; font-size:11px; font-weight:700; background:#1a2a6c; color:#fff; }
+  .plan.popular .plan-btn { background:#ff3131; }
+
+  /* AUTOGESTIÓN */
+  .auto-section { padding:40px 20px; background:#1a2a6c; }
+  .auto-title { font-size:18px; font-weight:800; color:#fff; margin-bottom:6px; }
+  .auto-sub { font-size:11px; color:#ffffffaa; margin-bottom:24px; line-height:1.6; }
+  .auto-plans { display:flex; gap:12px; }
+  .auto-plan { flex:1; background:#ffffff15; border:1px solid #ffffff25; border-radius:10px; padding:16px; text-align:center; }
+  .auto-plan-qty { font-size:28px; font-weight:800; color:#00d2ff; }
+  .auto-plan-label { font-size:10px; color:#ffffffaa; margin-top:2px; }
+  .auto-plan-price { font-size:16px; font-weight:700; color:#fff; margin-top:8px; }
+  .auto-plan-vat { font-size:9px; color:#ffffff66; }
+  .auto-plan-desc { font-size:10px; color:#ffffffbb; margin-top:6px; line-height:1.4; }
+
+  /* DIFERENCIAL */
+  .diff-section { padding:40px 20px; background:#2d2d2d; }
+  .diff-tag { display:inline-block; background:#ff3131; color:#fff; font-size:9px; font-weight:700; padding:4px 10px; border-radius:20px; letter-spacing:1px; margin-bottom:12px; }
+  .diff-title { font-size:18px; font-weight:800; color:#fff; margin-bottom:10px; line-height:1.3; }
+  .diff-text { font-size:11px; color:#ffffffaa; line-height:1.7; }
+  .diff-items { margin-top:18px; display:flex; flex-direction:column; gap:10px; }
+  .diff-item { display:flex; gap:10px; align-items:center; }
+  .diff-item-icon { font-size:18px; }
+  .diff-item-text { font-size:11px; color:#fff; font-weight:500; }
+
+  /* CONTACTO */
+  .contact-section { padding:40px 20px; }
+  .contact-title { font-size:18px; font-weight:800; color:#1a2a6c; margin-bottom:6px; }
+  .contact-sub { font-size:11px; color:#666; margin-bottom:20px; }
+  .form-field { margin-bottom:12px; }
+  .form-label { font-size:10px; font-weight:600; color:#444; margin-bottom:4px; display:block; text-transform:uppercase; letter-spacing:0.5px; }
+  .form-input { width:100%; border:2px solid #e5e7eb; border-radius:6px; padding:10px 12px; font-size:12px; font-family:'Poppins',sans-serif; }
+  .form-select { width:100%; border:2px solid #e5e7eb; border-radius:6px; padding:10px 12px; font-size:12px; font-family:'Poppins',sans-serif; background:#fff; }
+  .form-btn { width:100%; background:linear-gradient(135deg,#25D366,#128C7E); color:#fff; font-size:13px; font-weight:700; padding:13px; border-radius:8px; text-align:center; margin-top:6px; display:flex; align-items:center; justify-content:center; gap:8px; }
+
+  /* FOOTER */
+  footer { background:#1a2a6c; padding:30px 20px; text-align:center; }
+  .footer-logo { font-weight:800; font-size:16px; color:#fff; letter-spacing:1px; margin-bottom:14px; }
+  .footer-logo span { color:#ff3131; }
+  .footer-social { display:flex; justify-content:center; gap:12px; margin-bottom:16px; }
+  .social-btn { background:#ffffff15; border:1px solid #ffffff25; color:#fff; font-size:10px; font-weight:600; padding:6px 14px; border-radius:20px; }
+  .footer-links { font-size:9px; color:#ffffff66; }
+  .footer-links a { color:#ffffff66; margin:0 6px; }
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-float { position:fixed; bottom:24px; right:24px; width:52px; height:52px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px #25D36655; font-size:26px; z-index:999; }
+
+  .section-label { display:inline-block; background:#ff313115; color:#ff3131; font-size:9px; font-weight:700; padding:4px 10px; border-radius:20px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:10px; }
+</style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">LIT <span>Digital Hub</span></div>
+    <div class="nav-cta">Ver Planes</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="/LogoLIT.jpeg" alt="LIT Digital Hub" class="hero-logo">
+    <h1>Encendemos el <span>potencial digital</span> de tu negocio.</h1>
+    <p>Gestión profesional de redes sociales, creación de contenido y estrategia digital en Galicia. Deléganos tu presencia online para que tú te centres en vender.</p>
+    <div class="hero-btn">Ver Planes y Precios →</div>
+    <div class="hero-badge">
+      <div class="badge">📍 Galicia</div>
+      <div class="badge">🌐 ES / GL</div>
+      <div class="badge">📊 Basado en métricas</div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ LIT -->
+  <section class="section">
+    <div class="section-label">¿Por qué nosotros?</div>
+    <div class="section-title">Tu negocio merece más que redes sociales improvisadas.</div>
+    <p class="section-sub">Sabemos que no tienes tiempo para diseñar, escribir copies o entender el algoritmo. Si tus redes están estancadas, nosotros les damos la chispa que necesitan.</p>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="benefit-icon">🏴󠁧󠁢󠁳󠁣󠁴󠁿</div>
+        <div>
+          <div class="benefit-title">Identidad local</div>
+          <div class="benefit-desc">Contenido bilingüe (ES/GL) que conecta con tu cliente gallego.</div>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📅</div>
+        <div>
+          <div class="benefit-title">Consistencia garantizada</div>
+          <div class="benefit-desc">Publicaciones constantes, sin huecos vacíos ni semanas en silencio.</div>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">📈</div>
+        <div>
+          <div class="benefit-title">Resultados reales</div>
+          <div class="benefit-desc">Estrategias basadas en métricas, no en suerte ni intuición.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKS GESTIÓN INTEGRAL -->
+  <section class="pricing-section">
+    <div class="section-label">Gestión Integral</div>
+    <div class="pricing-title">Nosotros lo hacemos todo por ti.</div>
+    <p class="pricing-sub">Packs "Do It For You" — tú te centras en tu negocio.</p>
+    <div class="plans">
+
+      <div class="plan">
+        <div class="plan-name">Esencial</div>
+        <div class="plan-tagline">Tu escaparate profesional</div>
+        <div class="plan-price">250€ <span>/ mes + IVA</span></div>
+        <div class="plan-features">
+          <div class="plan-feature">Instagram + Facebook</div>
+          <div class="plan-feature">2 posts/semana</div>
+          <div class="plan-feature">Stories semanales</div>
+          <div class="plan-feature">Atención básica de comunidad</div>
+        </div>
+        <div class="plan-btn">Quiero este pack</div>
+      </div>
+
+      <div class="plan popular">
+        <div class="popular-badge">⭐ El más popular</div>
+        <div class="plan-name">Crecimiento</div>
+        <div class="plan-tagline">El más elegido por nuestros clientes</div>
+        <div class="plan-price">450€ <span>/ mes + IVA</span></div>
+        <div class="plan-features">
+          <div class="plan-feature">IG + FB + Google / LinkedIn</div>
+          <div class="plan-feature">3 posts/semana (inc. Reels)</div>
+          <div class="plan-feature">Campaña de Ads básica</div>
+          <div class="plan-feature">Reporte mensual de resultados</div>
+        </div>
+        <div class="plan-btn">Quiero este pack</div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Elite</div>
+        <div class="plan-tagline">Dominio total de tu presencia</div>
+        <div class="plan-price">850€ <span>/ mes + IVA</span></div>
+        <div class="plan-features">
+          <div class="plan-feature">Estrategia Omnicanal completa</div>
+          <div class="plan-feature">5 posts/semana</div>
+          <div class="plan-feature">Visita presencial para contenido</div>
+          <div class="plan-feature">Remarketing avanzado</div>
+        </div>
+        <div class="plan-btn">Quiero este pack</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AUTOGESTIÓN -->
+  <section class="auto-section">
+    <div class="auto-title">¿Prefieres publicar tú? Nosotros diseñamos.</div>
+    <p class="auto-sub">Estética profesional sin delegar la cuenta. Tú recibes los diseños y textos listos para publicar.</p>
+    <div class="auto-plans">
+      <div class="auto-plan">
+        <div class="auto-plan-qty">8</div>
+        <div class="auto-plan-label">diseños + textos</div>
+        <div class="auto-plan-price">170€</div>
+        <div class="auto-plan-vat">+ IVA / mes</div>
+        <div class="auto-plan-desc">Pack Autogestión Starter</div>
+      </div>
+      <div class="auto-plan">
+        <div class="auto-plan-qty">12</div>
+        <div class="auto-plan-label">diseños + textos</div>
+        <div class="auto-plan-price">250€</div>
+        <div class="auto-plan-vat">+ IVA / mes</div>
+        <div class="auto-plan-desc">Pack Autogestión Pro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAL ELITE -->
+  <section class="diff-section">
+    <div class="diff-tag">SOLO PACK ELITE</div>
+    <div class="diff-title">Vamos a tu negocio. Capturamos tu esencia.</div>
+    <p class="diff-text">No somos una agencia lejana. Vamos a tu negocio, capturamos la esencia de tu trabajo en fotos y vídeos profesionales y los transformamos en contenido de alto impacto.</p>
+    <div class="diff-items">
+      <div class="diff-item"><div class="diff-item-icon">📸</div><div class="diff-item-text">Sesión de fotos y vídeo en tu local</div></div>
+      <div class="diff-item"><div class="diff-item-icon">🎬</div><div class="diff-item-text">Contenido nativo, auténtico y diferencial</div></div>
+      <div class="diff-item"><div class="diff-item-icon">🗺️</div><div class="diff-item-text">Presencia física en toda Galicia</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact-section">
+    <div class="section-label">Contacto</div>
+    <div class="contact-title">¿Hablamos de tu proyecto?</div>
+    <p class="contact-sub">Cuéntanos qué necesitas y te respondemos en menos de 24h.</p>
+    <div class="form-field">
+      <label class="form-label">Nombre</label>
+      <input class="form-input" placeholder="Tu nombre" readonly>
+    </div>
+    <div class="form-field">
+      <label class="form-label">Email</label>
+      <input class="form-input" placeholder="tu@email.com" readonly>
+    </div>
+    <div class="form-field">
+      <label class="form-label">Teléfono</label>
+      <input class="form-input" placeholder="+34 600 000 000" readonly>
+    </div>
+    <div class="form-field">
+      <label class="form-label">Pack de interés</label>
+      <select class="form-select">
+        <option>Esencial — 250€/mes</option>
+        <option>Crecimiento — 450€/mes ⭐</option>
+        <option>Elite — 850€/mes</option>
+        <option>Autogestión 8 — 170€/mes</option>
+        <option>Autogestión 12 — 250€/mes</option>
+      </select>
+    </div>
+    <div class="form-btn">
+      <span>💬</span> Enviar por WhatsApp
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">LIT <span>Digital Hub</span></div>
+    <div class="footer-social">
+      <div class="social-btn">📸 Instagram</div>
+      <div class="social-btn">👍 Facebook</div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Aviso Legal</a> · <a href="#">Política de Privacidad</a>
+    </div>
+  </footer>
+
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<div class="whatsapp-float">💬</div>
+
+</body>
+</html>

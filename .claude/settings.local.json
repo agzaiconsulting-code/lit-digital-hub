@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx --version)",
+      "Bash(npx claude-mem:*)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('mcpServers',{}\\), indent=2\\)\\)\")",
+      "Bash(C:/Users/Adrian/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.6/scripts/start-server.sh *)",
+      "Bash(bash *)",
+      "Bash(cat \"/c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/.superpowers/brainstorm/\"*/state/server-info)",
+      "Bash(cp -r /tmp/web-lazaro/src /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/)",
+      "Bash(cp -r /tmp/web-lazaro/public /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/)",
+      "Bash(cp /tmp/web-lazaro/package.json /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/)",
+      "Bash(cp /tmp/web-lazaro/package-lock.json /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/)",
+      "Bash(cp /tmp/web-lazaro/tsconfig.json /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/)",
+      "Bash(cp *)",
+      "Bash(npm uninstall *)",
+      "Bash(npm install *)",
+      "Bash(npm show *)",
+      "Bash(node -e \"const v=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const arr=JSON.parse\\(v\\); console.log\\(arr.slice\\(-5\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const jest = require\\('/c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/node_modules/jest-config'\\); console.log\\(Object.keys\\(jest\\)\\)\")",
+      "Bash(grep -l \"setupFiles\" /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/node_modules/@jest/types/build/*.d.ts)"
+    ]
+  }
+}
