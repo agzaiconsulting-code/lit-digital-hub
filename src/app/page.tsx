@@ -7,6 +7,9 @@ import WhyLIT from '@/components/WhyLIT'
 import PricingPlans from '@/components/PricingPlans'
 import AutoGestion from '@/components/AutoGestion'
 import EliteDifferential from '@/components/EliteDifferential'
+import ContactForm from '@/components/ContactForm'
+import Footer from '@/components/Footer'
+import WhatsAppFloat from '@/components/WhatsAppFloat'
 
 export default function Home() {
   const [selectedPack, setSelectedPack] = useState('')
@@ -27,9 +30,11 @@ export default function Home() {
       <PricingPlans onSelectPack={handleSelectPack} />
       <AutoGestion onSelectPack={handleSelectPack} />
       <EliteDifferential />
-      <div ref={contactRef} className="h-32 bg-gray-100 flex items-center justify-center text-gray-400">
-        ContactForm, Footer, WhatsAppFloat coming next...
+      <div ref={contactRef}>
+        <ContactForm selectedPack={selectedPack} />
       </div>
+      <Footer />
+      <WhatsAppFloat />
     </main>
   )
 }
