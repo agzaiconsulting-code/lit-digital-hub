@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { PACKS, WHATSAPP_NUMBER } from '@/lib/constants'
+import { PACKS, WHATSAPP_NUMBER, type Pack } from '@/lib/constants'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
 
 interface ContactFormProps {
@@ -9,7 +9,12 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ selectedPack }: ContactFormProps) {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<{
+    name: string
+    email: string
+    telefono: string
+    pack: string
+  }>({
     name: '',
     email: '',
     telefono: '',

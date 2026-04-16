@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = '34600000000' // ← Placeholder — will be replaced with real number later
+export const WHATSAPP_NUMBER = '34690735533' 
 
 export const SITE_URL = 'https://litdigitalhub.com' // ← Placeholder
 
