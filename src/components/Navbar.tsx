@@ -4,12 +4,12 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <Image src="/LogoLIT.jpeg" alt="LIT Digital Hub" width={36} height={36} className="rounded-md object-contain" />
           <span className="font-extrabold text-brand-navy text-lg tracking-wide">
             LIT <span className="text-brand-red">Digital Hub</span>
           </span>
-        </div>
+        </a>
         <div className="hidden md:flex items-center gap-8">
           <a href="#why" className="text-sm font-medium text-gray-500 hover:text-brand-navy transition-colors">¿Por qué nosotros?</a>
           <a href="#planes" className="text-sm font-medium text-gray-500 hover:text-brand-navy transition-colors">Planes</a>
