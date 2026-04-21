@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'LIT Digital Hub — Gestión de Redes Sociales en Galicia',
   description:
     'Gestión profesional de redes sociales, contenido y estrategia digital en Galicia. Desde 250€/mes. Resultados reales.',
+  icons: {
+    icon: '/favicon.jpeg',
+  },
   openGraph: {
     title: 'LIT Digital Hub — Gestión de Redes Sociales en Galicia',
     description: 'Gestión profesional de redes sociales en Galicia. Desde 250€/mes.',

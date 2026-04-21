@@ -57,7 +57,7 @@ const plans: Array<{
     },
   },
   {
-    name: 'Elite', tagline: 'Dominio total de tu presencia', price: 'Desde 850€',
+    name: 'Elite', tagline: 'Dominio total de tu presencia con planes personalizados', price: 'Desde 850€',
     packKey: 'Pack Elite — 850€/mes', popular: false,
     features: ['Estrategia Omnicanal completa', '5 posts/semana', 'Visita presencial para contenido', 'Ads: Sistema de Adquisición Predictiva'],
     tooltip: {
