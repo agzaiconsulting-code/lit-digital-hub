@@ -7,6 +7,7 @@ import WhyLIT from '@/components/WhyLIT'
 import PricingPlans from '@/components/PricingPlans'
 import AutoGestion from '@/components/AutoGestion'
 import PruebaLIT from '@/components/PruebaLIT'
+import DevelopmentAI from '@/components/DevelopmentAI'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
@@ -30,6 +31,7 @@ export default function Home() {
       <PricingPlans onSelectPack={handleSelectPack} />
       <AutoGestion onSelectPack={handleSelectPack} />
       <PruebaLIT />
+      <DevelopmentAI />
       <div ref={contactRef} id="contacto">
         <ContactForm selectedPack={selectedPack} />
       </div>

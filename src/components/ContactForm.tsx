@@ -48,7 +48,7 @@ export default function ContactForm({ selectedPack }: ContactFormProps) {
             ¿Hablamos de tu proyecto?
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-8">
-            Cuéntanos qué necesitas y te respondemos en menos de 24h. Sin compromisos.
+            Menos tickets de soporte y más cafés para entender tu negocio. Queremos ser la extensión de tu equipo, no una voz lejana al otro lado del teléfono.
           </p>
           <div className="flex flex-col gap-5">
             {[

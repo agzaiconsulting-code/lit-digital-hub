@@ -15,6 +15,7 @@ export default function Navbar() {
           <a href="#planes" className="text-sm font-medium text-gray-500 hover:text-brand-navy transition-colors">Planes</a>
           <a href="#autogestion" className="text-sm font-medium text-gray-500 hover:text-brand-navy transition-colors">Autogestión</a>
           <a href="#prueba" className="text-sm font-medium text-brand-red hover:opacity-80 transition-opacity font-bold">Prueba LIT</a>
+          <a href="#desarrollo" className="text-sm font-medium text-gray-500 hover:text-brand-navy transition-colors">Desarrollo & IA</a>
           <a href="#contacto" className="text-sm font-medium text-gray-500 hover:text-brand-navy transition-colors">Contacto</a>
         </div>
         <a href="#planes" className="bg-brand-red text-white text-sm font-bold px-5 py-2.5 rounded-md shadow-md hover:opacity-90 transition-opacity">

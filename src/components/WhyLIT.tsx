@@ -3,9 +3,10 @@
 import { useEffect, useRef, useState } from 'react'
 
 const benefits = [
-  { icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', title: 'Identidad local', desc: 'Contenido bilingüe (ES/GL) que conecta con tu cliente gallego.' },
+  { icon: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', title: 'Identidad local', desc: 'Creamos contenido que entiende nuestra cultura, para que tu marca se sienta como en casa.' },
   { icon: '📅', title: 'Consistencia garantizada', desc: 'Publicaciones constantes, sin huecos vacíos ni semanas en silencio.' },
   { icon: '📈', title: 'Resultados reales', desc: 'Estrategias basadas en métricas, no en suerte ni intuición.' },
+  { icon: '👨‍🦰', title: 'Soporte Humano y Directo', desc: 'Nada de tickets de soporte ni esperas eternas. Tienes un consultor asignado con el que hablar por WhatsApp o tomarte un café.' },
   { icon: '🎨', title: 'Diseño profesional', desc: 'Contenido visual que destaca y representa tu marca con coherencia.' },
   { icon: '💬', title: 'Copys que venden', desc: 'Textos estratégicos que convierten seguidores en clientes.' },
   { icon: '🔒', title: 'Sin permanencia', desc: 'Flexibilidad total: cancela cuando quieras, sin compromisos.' },

@@ -41,7 +41,9 @@
       "Bash(CLAUDE_TOKEN_USAGE=110000 CLAUDE_TOKEN_BUDGET=200000 CLAUDE_CONTEXT_USED=110000 CLAUDE_CONTEXT_MAX=200000 ~/.claude/statusline-command.sh)",
       "Bash(CLAUDE_TOKEN_USAGE=170000 CLAUDE_TOKEN_BUDGET=200000 CLAUDE_CONTEXT_USED=170000 CLAUDE_CONTEXT_MAX=200000 ~/.claude/statusline-command.sh)",
       "mcp__plugin_claude-mem_mcp-search__smart_outline",
-      "mcp__plugin_claude-mem_mcp-search__get_observations"
+      "mcp__plugin_claude-mem_mcp-search__get_observations",
+      "Bash(mv \"Condiciones_Uso_LitDigitalHub.pdf\" \"public/\")",
+      "Bash(mv \"Politica_Privacidad_LitDigitalHub.pdf\" \"public/\")"
     ]
   }
 }
