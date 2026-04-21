@@ -5,7 +5,7 @@ export default function DevelopmentAI() {
     {
       icon: '🌐',
       title: 'Web & Landing Pages',
-      desc: 'No las vendas como "páginas", véndelas como herramientas de venta.',
+      desc: 'Webs que convierten visitas en clientes',
       items: [
         'Landing Pages: Rápidas y directas a la conversión',
         'Webs Corporativas: Tu casa digital con diseño profesional',
@@ -22,7 +22,7 @@ export default function DevelopmentAI() {
     },
     {
       icon: '🤖',
-      title: 'El Futuro: Automatizaciones e IA',
+      title: 'Automatizaciones e IA',
       desc: 'Lo que le da caché a tu marca',
       items: [
         'Agentes de IA: Chatbots inteligentes 24/7',
