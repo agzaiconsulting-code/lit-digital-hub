@@ -22,7 +22,26 @@
       "Bash(npm show *)",
       "Bash(node -e \"const v=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const arr=JSON.parse\\(v\\); console.log\\(arr.slice\\(-5\\).join\\('\\\\n'\\)\\)\")",
       "Bash(node -e \"const jest = require\\('/c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/node_modules/jest-config'\\); console.log\\(Object.keys\\(jest\\)\\)\")",
-      "Bash(grep -l \"setupFiles\" /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/node_modules/@jest/types/build/*.d.ts)"
+      "Bash(grep -l \"setupFiles\" /c/Users/Adrian/OneDrive/Escritorio/Claude/web_Lazaro/node_modules/@jest/types/build/*.d.ts)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('scripts:', list\\(d['scripts'].keys\\(\\)\\)\\)\")",
+      "Bash(node *)",
+      "Bash(npm list *)",
+      "Bash(npm test *)",
+      "Skill(claude-md-management:revise-claude-md)",
+      "Skill(claude-md-management:revise-claude-md:*)",
+      "Bash(gh auth *)",
+      "Bash(echo \"\")",
+      "Bash(echo \"# Claude Code local settings\")",
+      "Bash(echo \".claude/settings.local.json\")",
+      "Bash(echo \".superpowers/\")",
+      "Bash(chmod +x ~/.claude/statusline-command.sh)",
+      "Read(//c/Users/Adrian/.claude/**)",
+      "Bash(~/.claude/statusline-command.sh *)",
+      "Bash(CLAUDE_TOKEN_USAGE=50000 CLAUDE_TOKEN_BUDGET=200000 CLAUDE_CONTEXT_USED=45000 CLAUDE_CONTEXT_MAX=200000 ~/.claude/statusline-command.sh)",
+      "Bash(CLAUDE_TOKEN_USAGE=110000 CLAUDE_TOKEN_BUDGET=200000 CLAUDE_CONTEXT_USED=110000 CLAUDE_CONTEXT_MAX=200000 ~/.claude/statusline-command.sh)",
+      "Bash(CLAUDE_TOKEN_USAGE=170000 CLAUDE_TOKEN_BUDGET=200000 CLAUDE_CONTEXT_USED=170000 CLAUDE_CONTEXT_MAX=200000 ~/.claude/statusline-command.sh)",
+      "mcp__plugin_claude-mem_mcp-search__smart_outline",
+      "mcp__plugin_claude-mem_mcp-search__get_observations"
     ]
   }
 }

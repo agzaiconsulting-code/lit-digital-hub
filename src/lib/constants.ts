@@ -8,6 +8,7 @@ export const PACKS = [
   'Pack Elite — 850€/mes',
   'Pack Autogestión 8 — 170€/mes',
   'Pack Autogestión 12 — 250€/mes',
+  'Prueba LIT (Pack gratuito de muestra)',
 ] as const
 
 export type Pack = (typeof PACKS)[number]
