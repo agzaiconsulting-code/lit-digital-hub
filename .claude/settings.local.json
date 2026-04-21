@@ -43,7 +43,8 @@
       "mcp__plugin_claude-mem_mcp-search__smart_outline",
       "mcp__plugin_claude-mem_mcp-search__get_observations",
       "Bash(mv \"Condiciones_Uso_LitDigitalHub.pdf\" \"public/\")",
-      "Bash(mv \"Politica_Privacidad_LitDigitalHub.pdf\" \"public/\")"
+      "Bash(mv \"Politica_Privacidad_LitDigitalHub.pdf\" \"public/\")",
+      "Bash(pdftotext \"public/Condiciones_Uso_LitDigitalHub.pdf\" -)"
     ]
   }
 }

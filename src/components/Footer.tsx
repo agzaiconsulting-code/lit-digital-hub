@@ -30,8 +30,9 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-6 md:flex md:justify-between md:items-center">
           <p className="text-white/30 text-xs mb-3 md:mb-0">© {year} LIT Digital Hub. Todos los derechos reservados.</p>
           <div className="flex gap-5">
-            <a href="/Condiciones_Uso_LitDigitalHub.pdf" target="_blank" rel="noopener noreferrer" className="text-white/30 text-xs hover:text-white/60 transition-colors">Aviso Legal</a>
-            <a href="/Politica_Privacidad_LitDigitalHub.pdf" target="_blank" rel="noopener noreferrer" className="text-white/30 text-xs hover:text-white/60 transition-colors">Política de Privacidad</a>
+            <a href="/aviso-legal" className="text-white/30 text-xs hover:text-white/60 transition-colors">Aviso Legal</a>
+            <a href="/politica-privacidad" className="text-white/30 text-xs hover:text-white/60 transition-colors">Política de Privacidad</a>
+            <a href="/cookies" className="text-white/30 text-xs hover:text-white/60 transition-colors">Cookies</a>
           </div>
         </div>
       </div>
