@@ -23,7 +23,7 @@ export default function PoliticaPrivacidad() {
                   <p>
                     <strong>Nombre:</strong> Lázaro Irimia Terrán<br />
                     <strong>NIF:</strong> 76581166K<br />
-                    <strong>Email:</strong> lazaroirimia@gmail.com
+                    <strong>Email:</strong> socialmedia@litdigitalhub.net
                   </p>
                 </div>
 
@@ -90,7 +90,7 @@ export default function PoliticaPrivacidad() {
                     <li><strong>Oposición:</strong> Oponerte al tratamiento de tus datos</li>
                   </ul>
                   <p className="mt-3">
-                    Para ejercer estos derechos, contacta a <a href="mailto:lazaroirimia@gmail.com" className="text-brand-red hover:underline">lazaroirimia@gmail.com</a>
+                    Para ejercer estos derechos, contacta a <a href="mailto:socialmedia@litdigitalhub.net" className="text-brand-red hover:underline">socialmedia@litdigitalhub.net</a>
                   </p>
                 </div>
 
@@ -121,7 +121,7 @@ export default function PoliticaPrivacidad() {
                     Para cualquier pregunta sobre esta política o tus derechos relacionados con la privacidad, puedes contactarnos:
                   </p>
                   <p className="mt-3">
-                    <strong>Email:</strong> <a href="mailto:lazaroirimia@gmail.com" className="text-brand-red hover:underline">lazaroirimia@gmail.com</a>
+                    <strong>Email:</strong> <a href="mailto:socialmedia@litdigitalhub.net" className="text-brand-red hover:underline">socialmedia@litdigitalhub.net</a>
                   </p>
                 </div>
               </div>

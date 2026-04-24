@@ -126,7 +126,7 @@ export default function Cookies() {
                     Si tienes preguntas sobre nuestro uso de cookies, puedes contactarnos:
                   </p>
                   <p className="mt-3">
-                    <strong>Email:</strong> <a href="mailto:lazaroirimia@gmail.com" className="text-brand-red hover:underline">lazaroirimia@gmail.com</a>
+                    <strong>Email:</strong> <a href="mailto:socialmedia@litdigitalhub.net" className="text-brand-red hover:underline">socialmedia@litdigitalhub.net</a>
                   </p>
                 </div>
               </div>

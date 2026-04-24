@@ -26,7 +26,7 @@ export default function AvisoLegal() {
                     <strong>Nombre:</strong> Lázaro Irimia Terrán<br />
                     <strong>NIF:</strong> 76581166K<br />
                     <strong>Domicilio:</strong> O Pedrón 1, Vilanova de Lourenzá, 27760 Lugo (España)<br />
-                    <strong>Email:</strong> lazaroirimia@gmail.com<br />
+                    <strong>Email:</strong>socialmedia@litdigitalhub.net<br />
                     <strong>Actividad:</strong> Servicios de Social Media y Gestión Digital
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export default function AvisoLegal() {
           <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-200">
             <p className="text-sm text-gray-600">
               <strong>Contacto:</strong> Para cualquier duda o consulta respecto a este aviso legal, puedes contactarnos en
-              <a href="mailto:lazaroirimia@gmail.com" className="text-brand-red hover:underline ml-1">lazaroirimia@gmail.com</a>
+              <a href="mailto:socialmedia@litdigitalhub.net" className="text-brand-red hover:underline ml-1">socialmedia@litdigitalhub.net</a>
             </p>
           </div>
         </div>
