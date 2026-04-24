@@ -81,7 +81,7 @@ export default function DevelopmentAI() {
             ¿Necesitas digitalizar tu negocio o mejorar tu presencia digital? Hablamos de todo: desde una landing page hasta un agente de IA personalizado.
           </p>
           <a
-            href="https://wa.me/34690735533?text=Hola%21%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20desarrollo%20de%20webs%2C%20apps%20y%20automatizaciones%20con%20IA."
+            href="https://wa.me/34623558674?text=Hola%21%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20desarrollo%20de%20webs%2C%20apps%20y%20automatizaciones%20con%20IA."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-blue-600 to-brand-cyan text-white font-bold px-8 py-3.5 rounded-lg shadow-lg hover:opacity-90 transition-opacity"
