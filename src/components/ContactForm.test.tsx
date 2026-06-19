@@ -18,9 +18,9 @@ describe('ContactForm', () => {
   })
 
   it('pre-selects the pack passed via prop', () => {
-    render(<ContactForm selectedPack="Pack Crecimiento — 450€/mes" />)
+    render(<ContactForm selectedPack="Pack Crecimiento — 550€/mes + IVA" />)
     const select = screen.getByRole('combobox') as HTMLSelectElement
-    expect(select.value).toBe('Pack Crecimiento — 450€/mes')
+    expect(select.value).toBe('Pack Crecimiento — 550€/mes + IVA')
   })
 
   it('opens WhatsApp URL with correct data on submit', () => {

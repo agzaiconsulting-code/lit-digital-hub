@@ -18,8 +18,8 @@ const packs: Array<{
   name: string; tagline: string; tooltip: TooltipInfo
 }> = [
   {
-    qty: '8', label: 'diseños + textos', price: '170€',
-    packKey: 'Pack Autogestión 8 — 170€/mes',
+    qty: '8', label: 'diseños + textos', price: '190€',
+    packKey: 'Pack Autogestión 8 — 190€/mes + IVA',
     name: 'Pack Autogestión 8',
     tagline: 'Presencia Constante',
     tooltip: {
@@ -35,13 +35,13 @@ const packs: Array<{
         'Ahorras +15 horas de trabajo al mes',
         'Imagen de marca profesional y coherente',
       ],
-      price: '170€ + IVA/mes',
+      price: '190€ + IVA/mes',
       note: 'Sin permanencia, tú decides cuándo subir cada post.',
     },
   },
   {
-    qty: '12', label: 'diseños + textos', price: '250€',
-    packKey: 'Pack Autogestión 12 — 250€/mes',
+    qty: '12', label: 'diseños + textos', price: '290€',
+    packKey: 'Pack Autogestión 12 — 290€/mes + IVA',
     name: 'Pack Autogestión 12',
     tagline: 'Máximo Crecimiento',
     tooltip: {
@@ -57,7 +57,7 @@ const packs: Array<{
         'Feed estético que genera confianza a tus clientes',
         'Te olvidas de diseñar y redactar para siempre',
       ],
-      price: '250€ + IVA/mes',
+      price: '290€ + IVA/mes',
       note: 'La mejor relación calidad-precio por post.',
     },
   },

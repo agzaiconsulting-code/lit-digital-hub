@@ -5,7 +5,7 @@ const fields = {
   name: 'Ana Lopez',
   email: 'ana@test.com',
   telefono: '666111222',
-  pack: 'Pack Crecimiento — 450€/mes',
+  pack: 'Pack Crecimiento — 550€/mes + IVA',
 }
 
 describe('buildWhatsAppUrl', () => {

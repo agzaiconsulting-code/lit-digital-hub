@@ -18,12 +18,12 @@ const plans: Array<{
   features: string[]; tooltip: TooltipInfo
 }> = [
   {
-    name: 'Esencial', tagline: 'Tu escaparate profesional', price: 'Desde 250€',
-    packKey: 'Pack Esencial — 250€/mes', popular: false,
+    name: 'Esencial', tagline: 'Tu escaparate profesional', price: 'Desde 300€',
+    packKey: 'Pack Esencial — 300€/mes + IVA', popular: false,
     features: ['Instagram + Facebook', '2 posts/semana', 'Stories semanales', 'Atención básica de comunidad'],
     tooltip: {
       title: 'Pack ESENCIAL',
-      price: 'Desde 250€/mes + IVA',
+      price: 'Desde 300€/mes + IVA',
       items: [
         'Gestión completa: Instagram + Facebook',
         '2 publicaciones/semana (edición fotográfica y copy bilingüe ES o GL)',
@@ -38,12 +38,12 @@ const plans: Array<{
     },
   },
   {
-    name: 'Crecimiento', tagline: 'Impulsa tu crecimiento real', price: 'Desde 450€',
-    packKey: 'Pack Crecimiento — 450€/mes', popular: true,
+    name: 'Crecimiento', tagline: 'Impulsa tu crecimiento real', price: 'Desde 550€',
+    packKey: 'Pack Crecimiento — 550€/mes + IVA', popular: true,
     features: ['IG + FB + Google Business', '3 posts/semana (inc. Reels)', 'Campaña de Ads básica', 'Reporte mensual de resultados'],
     tooltip: {
       title: 'Pack CRECIMIENTO (El más popular)',
-      price: 'Desde 450€/mes + IVA',
+      price: 'Desde 550€/mes + IVA',
       items: [
         'Todo lo del Pack Esencial',
         '3 publicaciones/semana (incluye 1 Reel)',
@@ -57,12 +57,12 @@ const plans: Array<{
     },
   },
   {
-    name: 'Elite', tagline: 'Dominio total de tu presencia con planes personalizados', price: 'Desde 850€',
-    packKey: 'Pack Elite — 850€/mes', popular: false,
+    name: 'Elite', tagline: 'Dominio total de tu presencia con planes personalizados', price: 'Desde 950€',
+    packKey: 'Pack Elite — 950€/mes + IVA', popular: false,
     features: ['Estrategia Omnicanal completa', '5 posts/semana', 'Visita presencial para contenido', 'Ads: Sistema de Adquisición Predictiva'],
     tooltip: {
       title: 'Pack ELITE (Premium)',
-      price: 'Planes personalizados desde 850€/mes',
+      price: 'Planes personalizados desde 950€/mes + IVA',
       items: [
         'Todo lo del Pack Crecimiento',
         '5 publicaciones/semana (Reels, Carruseles, Fotos)',
