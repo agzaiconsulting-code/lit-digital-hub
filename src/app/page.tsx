@@ -6,6 +6,7 @@ import Hero from '@/components/Hero'
 import WhyLIT from '@/components/WhyLIT'
 import PricingPlans from '@/components/PricingPlans'
 import AutoGestion from '@/components/AutoGestion'
+import IdentidadVisual from '@/components/IdentidadVisual'
 import PruebaLIT from '@/components/PruebaLIT'
 import DevelopmentAI from '@/components/DevelopmentAI'
 import ContactForm from '@/components/ContactForm'
@@ -30,6 +31,7 @@ export default function Home() {
       <WhyLIT />
       <PricingPlans onSelectPack={handleSelectPack} />
       <AutoGestion onSelectPack={handleSelectPack} />
+      <IdentidadVisual />
       <PruebaLIT />
       <DevelopmentAI />
       <div ref={contactRef} id="contacto">
