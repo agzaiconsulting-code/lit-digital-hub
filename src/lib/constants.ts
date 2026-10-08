@@ -3,6 +3,7 @@ export const WHATSAPP_NUMBER = '34623558674'
 export const SITE_URL = 'https://litdigitalhub.com' // ← Placeholder
 
 export const PACKS = [
+  'Pack Básico — 150€/mes',
   'Pack Esencial — 300€/mes + IVA',
   'Pack Crecimiento — 550€/mes + IVA',
   'Pack Elite — 950€/mes + IVA',
