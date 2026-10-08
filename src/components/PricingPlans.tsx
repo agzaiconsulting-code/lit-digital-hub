@@ -18,6 +18,23 @@ const plans: Array<{
   features: string[]; tooltip: TooltipInfo
 }> = [
   {
+    name: 'Básico', tagline: 'Empieza a cuidar tu marca', price: 'Desde 150€',
+    packKey: 'Pack Básico — 150€/mes', popular: false,
+    features: ['1 publicación semanal', '2 stories a la semana', 'Diseño y texto incluidos', 'Plan adaptado a tu negocio'],
+    tooltip: {
+      title: 'Pack BÁSICO',
+      price: 'Desde 150€/mes + IVA',
+      items: [
+        '1 publicación semanal con diseño y texto',
+        '2 stories a la semana',
+        'Plan adaptado a tu negocio',
+      ],
+      objective: 'Empezar a tener presencia constante en redes con una imagen cuidada, sin dedicarle horas.',
+      why: 'Porque quieres tener actividad en redes sin tener que preparar cada publicación. Porque buscas una opción accesible y flexible, sin permanencia, para empezar a cuidar tu marca.',
+      ideal: 'Autónomos y pequeños negocios que están dando sus primeros pasos en redes sociales y quieren una presencia básica pero profesional.',
+    },
+  },
+  {
     name: 'Esencial', tagline: 'Tu escaparate profesional', price: 'Desde 300€',
     packKey: 'Pack Esencial — 300€/mes + IVA', popular: false,
     features: ['Instagram + Facebook', '2 posts/semana', 'Stories semanales', 'Atención básica de comunidad'],
@@ -145,7 +162,7 @@ export default function PricingPlans({ onSelectPack }: PricingPlansProps) {
         <p className="text-gray-500 text-base mb-10">
           Packs "We Do It All" — tú te centras en tu negocio, nosotros en tus redes.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {plans.map((plan) => (
             <PlanCard key={plan.name} plan={plan} onSelectPack={onSelectPack} />
           ))}
